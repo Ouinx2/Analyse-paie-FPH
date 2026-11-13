@@ -1,0 +1,21 @@
+:root{--bg:#f4f6f9;--fg:#1c2430;--card:#fff;--br:#d5dbe3;--ac:#0f4c81;--ok:#1f9d55;--wa:#e8890c;--er:#d33;--na:#8a94a3}
+@media(prefers-color-scheme:dark){:root{--bg:#10151c;--fg:#e8edf3;--card:#1a222d;--br:#2c3744;--ac:#4a9be8;--na:#a0aab8}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 -apple-system,system-ui,sans-serif;padding-top:env(safe-area-inset-top)}
+main{padding:14px 14px 96px;max-width:760px;margin:auto}
+h1{font-size:1.4rem;margin:.2em 0}h2{font-size:1.1rem;margin:1em 0 .4em}.sub{color:var(--na);margin-top:0}
+.avert,.card{background:var(--card);border:1px solid var(--br);border-radius:12px;padding:10px 12px;margin:10px 0}
+.avert{border-left:5px solid var(--wa)}.avert p{margin:.4em 0;font-size:.92rem}
+button{min-height:48px;padding:0 16px;border:0;border-radius:12px;background:var(--ac);color:#fff;font-size:1rem;font-weight:600;width:100%;margin:5px 0}
+button.sec{background:transparent;color:var(--ac);border:1.5px solid var(--ac)}button.dg{background:var(--er)}
+button.pt{width:auto;min-height:40px;padding:0 12px;margin:6px 6px 0 0}
+label{display:block;font-size:.9rem;margin:8px 0}
+input,select,textarea{display:block;width:100%;min-height:46px;margin-top:3px;padding:8px 10px;border:1px solid var(--br);border-radius:10px;background:var(--card);color:var(--fg);font-size:16px}
+input[type=checkbox]{display:inline-block;width:26px;min-height:26px;vertical-align:middle;margin-right:8px}
+textarea{min-height:320px;font:13px ui-monospace,monospace}
+.grille{display:grid;grid-template-columns:1fr 1fr;gap:8px}.grille .card{text-align:center;margin:0}.grille b{display:block;font-size:1.6rem}
+.ok{border-left:5px solid var(--ok)}.warn{border-left:5px solid var(--wa)}.err{border-left:5px solid var(--er)}.na{border-left:5px solid var(--na)}
+.tag{display:inline-block;padding:1px 8px;border-radius:8px;background:var(--br);font-size:.8rem;margin:2px 4px 2px 0}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--br);padding-bottom:env(safe-area-inset-bottom)}
+nav a{flex:1;text-align:center;padding:6px 0;font-size:.62rem;color:var(--na);text-decoration:none}nav a b{display:block;font-size:1.3rem;font-weight:400}nav a.on{color:var(--ac)}
+img.mini{max-width:100px;max-height:100px;border-radius:6px;margin:4px}
